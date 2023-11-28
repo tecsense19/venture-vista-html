@@ -179,6 +179,10 @@
         slidesPerView: 3,
         spaceBetween: 40
       },
+      1500: {
+        slidesPerView: 3,
+        spaceBetween: 70
+      },
     }
 
     //   speed: 400,
@@ -220,7 +224,7 @@
         },
         640: {
           slidesPerView: 2,
-          spaceBetween: 80
+          spaceBetween: 40
         },
         992: {
           slidesPerView: 3,

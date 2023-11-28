@@ -42,31 +42,32 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top align-items-center header-transparent">
 
-    <div class="container d-flex align-items-center justify-content-center main-header">
+    <div class="container d-flex align-items-center justify-content-center main-header position-relative">
 
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="/light-camera.html">Our Venture</a></li>
+          <li><a class="nav-link scrollto" href="/ourventure.html">Our Venture</a></li>
           <li><a class="nav-link scrollto" href="./blogpage.html">Blog</a></li>
 
         </ul>
         <div class="align-items-center">
-          <a href="index.html" class="logo me-auto"><img src="assets/img/homeimages/mainlogo.png" alt=""
+          <a href="index.html" class="logo me-auto"><img src="assets/img/homeimages/logo.svg" alt=""
               class="img-fluid"></a>
         </div>
         <ul>
 
-          <li><a class="nav-link scrollto " href="#portfolio">Join Us</a></li>
-          <li><a class="nav-link scrollto" href="#team">Partners</a></li>
+          <li><a class="nav-link scrollto " href="/bloginner.html">Join Us</a></li>
+          <li><a class="nav-link scrollto" href="/light-camera.html">Partners</a></li>
 
           <li><a class="nav-link scrollto" href="#footer">Free Webinar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <div class="social-links">
+      
+      <div class="social-links position-absolute">
         <a href="index.html" class=" useraccount"><img src="assets/img/homeimages/user.png" alt=""
             class="img-fluid"></a>
         <div class="align-items-center d-md-block d-lg-none">
@@ -74,7 +75,6 @@
               class="img-fluid"></a>
         </div>
       </div>
-
     </div>
   </header><!-- End Header -->
 
@@ -128,7 +128,7 @@
 
 
 
-  <section class="information_section " style="background-image: url(./assets/img/light-camera/bg1.png);">
+  <section class="information_section " style="background-image: url(/assets/img/homeimages/firstform.png);">
     <div class="container">
       <div class="information_tabs">
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
@@ -189,7 +189,7 @@
               </form>
               <div class="continueandpreview justify-content-end">
                 <button type="button" class="cuntinuebtn" id="n-btn1">Continue <img
-                    src="assets/img/light-camera/btn-arrow-left.png" alt=""></button>
+                    src="/assets/img/homeimages/leftarrowform.png" alt=""></button>
               </div>
             </div>
           </div>
@@ -226,9 +226,9 @@
               </form>
               <div class="continueandpreview">
                 <button type="button" class="previousbtn" id="p-btn1"><img
-                    src="assets/img/light-camera/btn-arrow-right.png" alt=""> Previous</button>
+                    src="/assets/img/homeimages/rightarrow.png" alt=""> Previous</button>
                 <button type="button" class="cuntinuebtn" id="n-btn2">Continue <img
-                    src="assets/img/light-camera/btn-arrow-left.png" alt=""></button>
+                    src="/assets/img/homeimages/leftarrowform.png" alt=""></button>
               </div>
             </div>
           </div>
@@ -265,20 +265,21 @@
               </form>
               <div class="continueandpreview">
                 <button type="button" class="previousbtn" id="p-btn2"><img
-                    src="assets/img/light-camera/btn-arrow-right.png" alt=""> Previous</button>
+                    src="/assets/img/homeimages/rightarrow.png" alt=""> Previous</button>
                 <button type="button" class="cuntinuebtn" id="n-btn3">Continue <img
-                    src="assets/img/light-camera/btn-arrow-left.png" alt=""></button>
+                    src="/assets/img/homeimages/leftarrowform.png" alt=""></button>
               </div>
             </div>
           </div>
           <div class="tab-pane fade" id="pills-step4" role="tabpanel" aria-labelledby="pills-step4-tab">
-            <div class="personal_information_form" id="Occupation">
+            <div class="personal_information_form occupation_status" id="Occupation" >
+              <h3 class="text-center">Your Interaction with Our Company</h3>
               <iframe
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2Flos_Ange"
                 width="100%" height="400"></iframe>
               <div class="continueandpreview">
-                <button type="button" class="previousbtn" id="p-btn3"><img
-                    src="assets/img/light-camera/btn-arrow-right.png" alt=""> Previous</button>
+                <button type="button" class="lastpreviousbtn" id="p-btn3"><img
+                    src="/assets/img/homeimages/rightarrow.png" alt=""> Previous</button>
               </div>
             </div>
             <div class="continueandpreview justify-content-center">
@@ -295,11 +296,11 @@
   <section class="receipient padding-50" style="background-image:url(./assets/img/homeimages/lightcamera.png);">
     <div class="container py-5">
       <div class="row">
-      <div class="col-12 col-md-4 ">
+      <div class="col-12 col-md-5 ">
         <div class="receipientimage bg-white">
         <img src="./assets/img/homeimages/footertlogo.png" alt="" class="img-fluid  "></div>
       </div>
-      <div class="col-12 col-md-8 col-lg-6 letter">
+      <div class="col-12 col-md-7 col-lg-6 letter">
         <p>
           <strong> Dear [Recipient's Name],</strong>
         <p>Thank you for choosing Venture Vista! <br />
@@ -323,21 +324,24 @@
     </div>
   </section>
 
-  <footer class="footer  padding-50 pb-0 ">
-    <div class="container pt-4">
+  <footer class="footer  padding-50 pb-0 " data-aos="fade-up">
+    <div class="container pt-4" data-aos="zoom-out" data-aos-delay="200">
       <div class="footer-links text-center">
-        <img src="./assets/img/homeimages/footertlogo.png " alt="" srcset="" class="text-center img-fluid mb-4">
-        <ul class="d-flex justify-content-around align-items-center footer-link">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Terms of service</a></li>
-          <li><a href="#">Privacy policy</a></li>
+        <img src="./assets/img/homeimages/footertlogo.png " alt="" srcset="" class="text-center img-fluid mb-4"
+          style="mix-blend-mode: darken;">
+        <ul class="d-flex justify-content-between align-items-center footer-link">
+          <li><a href="#">Our Agreement</a></li>
+          <li><a href="#about">Legal Clarifications</a></li>
+          <li><a href="#">Our Venture</a></li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#">VV Founders</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="row padding-50">
         <div class="col-md-6">
-          <div class=" d-flex footer-foounder">
+          <div class=" d-flex footer-foounder align-item-start">
             <div>
               <img src="./assets/img/homeimages/footerprofile1.png" alt="" class="img-fluid footerprofile">
               <h3 class=" profilename mt-4">Dr. Finkelstein</h3>
@@ -347,13 +351,12 @@
               <h3 class=" profilename mt-4">Dr. Finkelstein</h3>
             </div>
           </div>
-          <h2 class="text-center mt-3 mb-4 pinkfont">Venture Vista Founders</h2>
+          <h2 class=" mt-3 mb-4 mx-5 pinkfont vistafounder">Venture Vista Founders</h2>
         </div>
         <div class="col-md-6">
           <form action="" method="post" class="subscribe-form">
             <input type="email" class="subscribe-email" name="email"
-              placeholder="Type Your Email To Get More Information"><input type="submit" class="subscribe"
-              value="Subscribe">
+              placeholder="Type Your Email To Get More Information"><input type="submit" class="subscribe" value="Send">
           </form>
           <div class="footer-links mt-4">
             <p>
@@ -364,10 +367,10 @@
           </div>
 
           <div class="social-linkss">
-            <a href="#" class="facebook "><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="instagram mx-2"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin mx-2"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="facebook mx-1 ml-0"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="instagram mx-1"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin mx-1"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="twitter mx-1"><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -398,22 +401,28 @@
   <script>
     $("#n-btn1").click(function () {
       $('#pills-tab li:nth-child(2) button').tab('show');
+      $('.information_section').css('background-image', 'url(./assets/img/homeimages/sendimg.png)');
     });
     $("#n-btn2").click(function () {
       $('#pills-tab li:nth-child(3) button').tab('show');
+      $('.information_section').css('background-image', 'url(./assets/img/homeimages/thirdimg.png)');
     });
     $("#n-btn3").click(function () {
       $('#pills-tab li:nth-child(4) button').tab('show');
+      $('.information_section').css('background-image', 'url(./assets/img/homeimages/fourthimg.png)');
     });
-
+    
     $("#p-btn1").click(function () {
       $('#pills-tab li:nth-child(1) button').tab('show');
+      $('.information_section').css('background-image', 'url(./assets/img/homeimages/sendimg.png)');
     });
     $("#p-btn2").click(function () {
       $('#pills-tab li:nth-child(2) button').tab('show');
+      $('.information_section').css('background-image', 'url(./assets/img/homeimages/thirdimg.png)');
     });
     $("#p-btn3").click(function () {
       $('#pills-tab li:nth-child(3) button').tab('show');
+      $('.information_section').css('background-image', 'url(./assets/img/homeimages/fourthimg.png)');
     });
   </script>
 
