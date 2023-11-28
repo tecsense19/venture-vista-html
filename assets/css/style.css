@@ -863,9 +863,9 @@ background-position: left;
 #testimonials .swiper-pagination .swiper-pagination-bullet:nth-child(5){
   content: url(../img/testimonial-4.jpg);
 }
-#testimonials .testimonial-item p {
+/* #testimonials .testimonial-item p {
 
-}
+} */
 .dots-testi{
   position: relative;
   gap: 30px;
