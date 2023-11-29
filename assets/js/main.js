@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -113,7 +113,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -122,7 +122,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -132,7 +132,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -149,8 +149,8 @@
 
 
 
-    var swiper = new Swiper(".mySwiper", {
-      speed: 400,
+  var swiper = new Swiper(".mySwiper", {
+    speed: 400,
     loop: true,
     autoplay: {
       delay: 2000,
@@ -196,91 +196,91 @@
     //   type: 'bullets',
     //   clickable: true
     // }
-    });
-    
+  });
 
-    var swiperss = new Swiper(".stepscarousel", {
-      speed: 400,
-      loop: true,
-      //  center: false,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: true
+
+  var swiperss = new Swiper(".stepscarousel", {
+    speed: 400,
+    loop: true,
+    //  center: false,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: true
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40
       },
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 40
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 40
       },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 40
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 40
-        },
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 40
-        },
-        1140: {
-          slidesPerView: 4,
-          spaceBetween: 40
-        },
-        1560:{
-          slidesPerView: 5,
-          spaceBetween: 40
-        }
+      1140: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      },
+      1560: {
+        slidesPerView: 5,
+        spaceBetween: 40
       }
-    });
-    
-    var swipers = new Swiper(".sponsered", {
-      speed: 400,
-      loop: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: true
-      },
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 40
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 80
-        },
-        992: {
-          slidesPerView: 6,
-          spaceBetween: 40
-        }
-      }
-    });
-    
-    // Hide pagination bullets on desktop
-    if (window.innerWidth >= 768) {
-      swipers.pagination.bullets.forEach(bullet => {
-        bullet.style.display = 'none';
-      });
     }
-    
+  });
+
+  var swipers = new Swiper(".sponsered", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: true
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 40
+      }
+    }
+  });
+
+  // Hide pagination bullets on desktop
+  if (window.innerWidth >= 768) {
+    swipers.pagination.bullets.forEach(bullet => {
+      bullet.style.display = 'none';
+    });
+  }
+
 
   //   var lecturers = function () {
   //     var owl = $(".main-lactures");
@@ -334,7 +334,7 @@
   });
 
 
-  
+
   /**
    * Porfolio isotope and filter
    */
@@ -347,9 +347,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -357,7 +357,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -410,7 +410,7 @@
       prevEl: '.swiper-button-prev',
     }
   });
-  
+
 
   /**
    * Clients Slider
@@ -454,13 +454,26 @@
    * Animation on scroll
    */
   window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
+    if (window.innerWidth >= 768) {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      })
+    } else {
+      // You can optionally disable or reset AOS for smaller screens
+      AOS.init({
+        disable: function () {
+          var maxWidth = 768;
+          return window.innerWidth < maxWidth;
+        }
+      });
+    }
+
+
   });
+
 
   /**
    * Initiate Pure Counter 

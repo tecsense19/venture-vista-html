@@ -301,6 +301,12 @@ height: 110px;
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
+  .itemnumbers {
+    padding: 20px !important;
+  }
+  /* .blogchoosingven .vennumber {
+    left: -27px !important;
+} */
   .lecturecontent .lecturedescription{
     margin: 0px !important;
   }
@@ -360,6 +366,10 @@ letter-spacing: 2.1px;
 text-transform: capitalize;
 }
 @media (max-width: 992px) {
+  .blogchoosingven .vennumber {
+    left: -30px !important;
+    /* width: 60px; */
+}
   .mobile-nav-toggle {
     display: block;
   }
@@ -1218,7 +1228,9 @@ opacity: 1;
   /* .container,.steps-section.container-fluid {
     max-width: 85.25%;
 } */
-
+.blogchoosingven .items-num {
+  padding: 50px 8px !important;
+}
 .footer-links ul li a{
   font-size: 14px !important;
  
@@ -1687,6 +1699,13 @@ padding: 3px;
     font-size: 14px !important;
   
   }
+  .occupation_status h3{
+    text-align: center;
+    margin-bottom: 0px !important;
+  }
+  .information_tabs #pills-tabContent,.information_tabs .personal_information_form{
+    margin-top: 10px !important;
+  }
   .blogimgtext{
     gap: 10px  !important;
   }
@@ -1934,7 +1953,7 @@ width: 100%;
   font-size: 14px;
 }
 .subscribe-form input {
-  padding: 5px 17px;
+  padding: 3px 17px;
 }
 .subscribe-form .subscribe{ 
   color:#fff;
@@ -2043,7 +2062,12 @@ width: 100%;
     height: 40px;
     padding: 2px}
 }
-
+.calenderprevone{
+  margin: auto;
+    width: fit-content;
+    margin-bottom: -40px;
+    margin-top: 44px;
+}
 /* Blog page */
 /* <img src="./assets/img/homeimages/Banersheader.png" alt="" srcset="" class="img-fluid"> */
 .banner-header{
@@ -2053,7 +2077,7 @@ width: 100%;
 h1.bannerheader {
   color: #FFF;
   font-family: Impact;
-  font-size: clamp(50px, 8vw, 150px);
+  font-size: clamp(50px, 8vw, 100px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2220,7 +2244,7 @@ background-color: #EF8300;
   }
 .itemnumbers{
   border: 3px solid;
-  padding: 18px ;
+  padding: 30px ;
   border-radius: 65px;
 }
 .numbers .itemnumbers:first-child{
@@ -2244,10 +2268,28 @@ box-shadow: 23px 23px 16px 0px rgba(0, 0, 0, 0.10);
 .blogpagenum .venturetext {
   font-size: clamp(16px, 1.4vw, 24px) !important;
 }
+
+.blogchoosingven .items-num{
+  padding: 50px 30px;
+}
 /* Media query for mobile screens */
 @media (max-width: 768px) {
+  .information_tabs .form_details input, .information_tabs .form_details select, .information_tabs .form_details textarea{
+    line-height: 18px !important;
+    margin-bottom: 13px !important;
+    border-radius: 5px !important;
+  }
   .boldchar {
     text-align: center !important;
+}
+h1,h2,h3,h4,h5{
+  font-family:Impact !important ;
+}
+.receipientimage img{
+  width: 121px;
+}
+.calenderprevone{
+    margin-bottom: 0px;
 }
 .mostpopular{
   margin-left: auto;
@@ -2363,7 +2405,8 @@ box-shadow: 23px 23px 16px 0px rgba(0, 0, 0, 0.10);
   }
   .information_tabs .previousbtn ,.information_tabs .cuntinuebtn {
     font-size: 14px !important;
-    padding: 12px 30px !important;
+    padding: 0 !important;
+    padding-top: 30px !important;
   }
   .footer-foounder {
     justify-content: center;
@@ -2388,7 +2431,12 @@ box-shadow: 23px 23px 16px 0px rgba(0, 0, 0, 0.10);
 .receipientimage {
   margin: auto;
   margin-bottom: 30px;
+  width: fit-content !important;
 }
+/* .receipientimag img{
+  width: 121px !important;
+  height: auto;
+} */
 .letter{
   text-align: center;
 }
@@ -2399,6 +2447,9 @@ font-size: 14px !important;
 
 
 /* light cameras */
+.businessidea input{
+  height: 100px;
+}
 .light-camera-text{
   font-size: clamp(12px, 1.4vw, 24px);
 }
@@ -2661,7 +2712,7 @@ font-size: 14px !important;
 }
 
 .information_tabs .cuntinuebtn {
-  padding: 12px 50px;
+  padding: 12px 50px !important;
   border: 0;
   outline: unset;
   color: #FFF;
@@ -2705,7 +2756,7 @@ font-size: 14px !important;
 .occupation_status h3 {
   color: #FFF;
   font-family: Impact;
-font-size: clamp(20px,4vw,40px);
+font-size: clamp(20px,2.5vw,40px);
   font-style: normal;
   font-weight: 400;
   line-height: 70px;
@@ -2722,7 +2773,7 @@ font-weight: 380;
 }
 .receipientimage{
   border-radius: 100%;
-  padding: 130px 90px;
+  /* padding: 130px 90px; */
     width: fit-content;
 }
 .lastpreviousbtn{
@@ -2865,6 +2916,10 @@ margin: 50px 0;
 .leftpostimg{
   width: 38%;
 }
+.blogchoosingven .vennumber {
+  left: -30px;
+  width: 60px;
+}
 @media screen and (max-width: 1140px) {
   .blogpage-btn{
   font-size: 16px;
@@ -2873,6 +2928,49 @@ margin: 50px 0;
 @media screen and (max-width: 768px) {
   .darkcol{
     color: #000;
+  }
+  .information_tabs .nav-pills .nav-link{
+    line-height: 0px;
+  }
+  .information_tabs .cuntinuebtn{
+    padding: 6px 22px !important;}
+    .calenderprevone .cuntinuebtn{
+      padding: 6px 35px !important;}
+  .light-camera h1{
+    font-size: 28px ;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 107.143% */
+    letter-spacing: 0.74px;
+  }
+  .light-camera ol{
+    border-radius: 11px;
+background: rgba(0, 0, 0, 0.50);
+margin-bottom: 30px !important;
+  }
+  .light-camera li{
+    color: #FFF;
+font-family: Impact;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 166.667% */
+  }
+  /* .light-camera li::marker{
+    margin: 0 10px;
+  } */
+  .lightheader{
+    display: none !important;
+  }
+  .information_tabs .continueandpreview{
+    flex-direction: column-reverse;
+  }
+  .previousbtn{
+  display: block;
+    width: -webkit-fill-available;
+    text-align: left;
+    background: none !important;
+    box-shadow: none !important;
   }
   .free-webinar-pera {
     color: #000;
