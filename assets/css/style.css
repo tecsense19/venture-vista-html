@@ -301,6 +301,12 @@ height: 110px;
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
+  .trainingpoint{
+    padding: 20px 15px !important;
+  }
+  /* .trainingpoint{
+    padding: 16px 10px !important;
+  } */
   .itemnumbers {
     padding: 20px !important;
   }
@@ -528,6 +534,9 @@ text-transform: capitalize;
 }
 
 @media (max-width: 992px) {
+  .training-content{
+    width: fit-content !important;
+  }
   #hero .intro-info h2 {
     font-size: 34px;
     margin-bottom: 30px;
@@ -751,7 +760,7 @@ text-decoration-line: underline;
   color: #EF8300;
 }
 .sky-green{
-  color: #0E8E77;
+  color: #33B7A9;
 }
 .leftjourney{
   border-radius: 15px;
@@ -1224,10 +1233,30 @@ opacity: 1;
 
 }
 }
+.trainingsteps{
+  display:flex ;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.trainingpoint {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+}
 @media (max-width:1140px) {
   /* .container,.steps-section.container-fluid {
     max-width: 85.25%;
 } */
+/* .trainingsteps .trainingpoint {
+  width: 50%;
+} */
+.trainingsteps{
+  gap: 30px;
+}
+.trainingpoint {
+  flex: 0 0 calc(50% - 15px); /* Two boxes in one row with gap */
+  max-width: calc(50% - 15px);
+}
 .blogchoosingven .items-num {
   padding: 50px 8px !important;
 }
@@ -1666,10 +1695,13 @@ padding: 3px;
 
 }
 .sponseredtitle{
-  margin-top: 30px;
+  margin-top: 45px;
 }
 .sponsereddesc{
   font-size: clamp(10.636px,2vw,16px) !important;
+}
+.stroketext{
+ margin-bottom: -7%;
 }
 @media (max-width:1177px) {
   #header .social-links {
@@ -1690,15 +1722,30 @@ padding: 3px;
 }
 }
 @media (min-width:768px) {
+  
   .lacture-navs,.step-nav{
     display: none !important;
     }
 }
 @media (max-width: 992px) {
+  .joinusimg img{
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .heartventuretext{
+    text-align: center;
+  }
+  .heartventure{
+    top: 45% !important;
+    margin: 0 50px;
+  }
   .left-author p,.left-author .sky-green.darkfear {
     font-size: 14px !important;
-  
   }
+  /* .trainingpoint{
+    flex: 0 0 50%; 
+    max-width: 50%;
+  } */
   .occupation_status h3{
     text-align: center;
     margin-bottom: 0px !important;
@@ -1750,11 +1797,18 @@ padding: 3px;
 height: 80px;
 }
   .mobile-nav-toggle {
-    right: 37px;
+    right: 22px;
     top: 29px;
 }
 }
 @media (max-width: 768px) {
+  .stroketext{
+    margin-bottom: -18%;
+   }
+   .stroketext .container h1{
+    text-align: center;
+    margin: 0 10vw;
+   }
   .footerprofile {
     width: 70px;
 }
@@ -1862,8 +1916,8 @@ width: 100%;
   }
   .stepscarousel .swiper-button-next,.stepscarousel .swiper-rtl .swiper-button-prev{
     right: auto;
-    left: 0px;
-    background: #fff;
+    left: -31px;
+    background: #f3f3f3;
     padding: 15px;
     height: 27px;
     border-radius: 5px;
@@ -1890,8 +1944,8 @@ width: 100%;
 }
 .stepscarousel .swiper-button-prev,.stepscarousel .swiper-rtl .swiper-button-next{
   left: auto;
-  right: 0px;
-  background: #fff;
+  right: 31px;
+  background: #f3f3f3;
   padding: 15px;
   height: 27px;
   border-radius: 5px;
@@ -2006,6 +2060,9 @@ width: 100%;
     }
 }
 @media (max-width: 610px) {
+  .heartventure{
+    top: 37.5% !important;
+  }
   .blog-btn{
     font-size: 12px !important;
   }
@@ -2345,7 +2402,7 @@ h1,h2,h3,h4,h5{
     padding: 0px !important;
   }
   .main-lacture .swiper-slide{
-    padding: 10px;
+    padding: 0px 5px;
   }
   /* .main-lacture .swiper-slide {
   box-shadow: 0px 0px 9.31978px 0px rgba(0, 0, 0, 0.15);
@@ -2925,7 +2982,59 @@ margin: 50px 0;
   font-size: 16px;
 }
 }
+.grayfont{
+  color: #3D3D3D;
+}
+/* .hours{
+  font-size: clamp(16px,2vw,20px) !important;
+} */
+/* .venturegap{
+  height: 50px;
+} */
 @media screen and (max-width: 768px) {
+  .firstfonder{
+    float:none !important;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  .founderdesc{
+    margin-bottom: 0px !important;
+  }
+  .vencommunity{
+    text-align: center;
+  }
+  /* .venturegap{
+    height: 50px;
+  } */
+  .vendisimg{
+    height: 268px !important;
+    padding: 20px;
+  }
+  
+  .readytoleap.padding-50{
+  padding: 0;
+  margin: 25px 0;
+  }
+  .discovervista.padding-50,.vencommunity.padding-50,.founders.padding-50{
+    padding-bottom: 0px;
+  }
+  .training-prog.padding-50{
+    padding:0px;
+  }
+  .training-prog.padding-50 .container{
+    padding: 0 30px;
+  }
+  .discovervista {
+    text-align: center;
+
+  }
+  .rightventrure{
+    margin-top: 10px !important;
+  }
+  .trainingpoint {
+    flex: 0 0 calc(100% ); /* Two boxes in one row with gap */
+    max-width: calc(100%);
+  }
   .darkcol{
     color: #000;
   }
@@ -2986,18 +3095,120 @@ line-height: 20px; /* 166.667% */
   margin-bottom: 20px; /* Adjust the spacing between rows */
 }
 }
+/* join us partner page */
+.heartventure{
+  top: 33.3%;
+}
+.vendisimg h1,.heartventure{ font-size: clamp(30px,3.4vw,55px)};
+/* founders venture page */
+.founderdesc{
+  font-size: clamp(14px,1.3vw,22px);
+}
+.firstfonder{
+  float: right;
+}
+.founderhead{
+  font-size: clamp(25px,4vw,55px);
+}
+
+/* stepbystep */
+.stepbystepitem h1{
+  font-size: clamp(35px,4vw,55px);
+}
+.stepbystepitem h3{
+  font-size: clamp(16px,2vw,25px);
+}
+.stepbystepitem p{
+  font-size: clamp(10px,2vw,12px);
+}
+.stepbysteprow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap value as needed */
+}
+.asdf{
+  /* background: radial-gradient(84.71% 140.3% at 94.22% 65.98%, #EF8300 0%, #EF8300 100%); */
+box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.15) inset;
+}
+.stepbystepitem {
+  background: #f00;
+  clip-path: polygon(0px 0px, calc( 100% - 90px) 0px, calc( 100% - 4px) calc( 100% - 140px), calc( 100% - 90px) 100%, 0px 100%);
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 20px;
+}
+@media (min-width: 1141px) {
+  .stepbystepitem {
+    flex: 0 0 calc(33.33% - 5px); /* Three boxes in one row with gap */
+    max-width: calc(33.33% - 5px);
+  }
+}
+
+@media (max-width: 1140px) {
+  .stepbystepitem {
+    flex: 0 0 calc(50% - 5px); /* Two boxes in one row with gap */
+    max-width: calc(50% - 5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .stepbystepitem {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 /* our venture */
+/* .trainingsteps{
+  gap: clamp(10px,2.4vw,50px);
+} */
+.joinusimg{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+.vendisimg{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+.readytoleap{
+  background-size: cover;
+}
+.readytoleap .container p:nth-child(2){
+  max-width: 829px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.readytoleap .container p:nth-child(3){
+  max-width: 1045px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.trainingpoint{
+  padding: 36px 30px;
+}
 .big-font{
   font-family: Impact;
   font-size: clamp(48px, 14.2vw, 212.57px);
   -webkit-text-stroke: 2px rgba(255, 0, 131, 0.1);
   text-stroke: 2px rgba(255, 0, 131, 0.1);
   color: transparent;
-  display: inline-block;
+  /* display: inline-block; */
+}
+.darkline{
+  background-color: #000;
+  opacity: 0.5;
 }
 .ourventurehead{
   font-size: clamp(20px,4vw,55px);
-  padding-right: 20%;
+  /* padding-right: 20%; */
 }
 .discovervista p , .discovervista strong{
   color: #3D3D3D;
@@ -3027,11 +3238,12 @@ font-size: clamp(22px , 2vw,30px) !important;
 font-weight: 400;
 }
 .trainingpoint p{
-  font-size: clamp(12px , 2vw,16px) !important;
+  font-size: clamp(12px , 1vw,16px) !important;
   font-weight: 400;
 }
 .trainingpoint h4{
-font-size: clamp(16px,1vw,20px);
+font-size: clamp(16px,2vw,20px);
+font-family: lemonada !important;
 }
 .trainingpoint small{
 color: #020D5C;

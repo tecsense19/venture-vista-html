@@ -268,6 +268,14 @@
         spaceBetween: 80
       },
       992: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      },
+      1140: {
+        slidesPerView: 5,
+        spaceBetween: 40
+      },
+      1400: {
         slidesPerView: 6,
         spaceBetween: 40
       }
