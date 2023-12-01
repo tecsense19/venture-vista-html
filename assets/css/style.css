@@ -573,9 +573,9 @@ text-transform: capitalize;
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-/* section {
+section {
   overflow: hidden;
-} */
+}
 /* section free webinar */
 .sky-text{
   color: #33B8AA;
@@ -750,11 +750,12 @@ section.steps-section {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
-@media screen and (min-width:1729px) {
-   /* .swiper-pagination-bullet-active::before{
-    margin: -2.7px -2.7px;} */
+@media (min-width:1910px) {
+   .swiper-pagination-bullet-active::before{
+    margin: -3px -3px;}
   
 }
+
 .rightpost {
   position: sticky;
   top: 120px;
