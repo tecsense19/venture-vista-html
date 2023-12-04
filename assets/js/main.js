@@ -181,7 +181,7 @@
       },
       1500: {
         slidesPerView: 3,
-        spaceBetween: 70
+        spaceBetween: 50
       },
     }
 
@@ -236,7 +236,7 @@
       },
       1560: {
         slidesPerView: 5,
-        spaceBetween: 40
+        spaceBetween: 20
       }
     }
   });
