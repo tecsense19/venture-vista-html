@@ -1515,6 +1515,10 @@ a strong:hover,
 
 
 @media (max-width: 1570px) {
+
+  h1,h2,h3,h4,h5{
+    line-height: normal;
+  }
   .dots-testi {
     justify-content: center !important;
     /* margin-top: 30px; */
