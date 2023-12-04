@@ -17,6 +17,9 @@ body {
   background: #fff;
   color: #444;
   font-family: 'Lemonada', cursive;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
