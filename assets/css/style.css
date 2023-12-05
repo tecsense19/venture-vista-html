@@ -403,7 +403,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 2.1px;
   text-transform: capitalize;
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 
 @media (max-width: 991px) {
@@ -870,9 +870,11 @@ section.steps-section {
 
 .rightpost {
   position: sticky;
-  top: 120px;
+  top: 130px;
 }
-
+.bloginner{
+  overflow: visible;
+}
 /* .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px);
 } */
@@ -1012,6 +1014,9 @@ a strong:hover,
   .leftjourney {
     padding: 5vh 0 3vh;
   }
+  .winsection {
+    width: auto !important;
+}
 
 }
 
@@ -2230,6 +2235,13 @@ input {
 
 }
 @media (max-width: 767px) {
+  .becomepart,.blog-pink{
+    text-align: center;
+  }
+  .mutedtext{
+    margin-bottom: 10px;
+    text-align: left !important;
+  }
   .stepscarousel .item {
     padding: 6px 30px 6px;}
   .registerhead{
@@ -2547,7 +2559,7 @@ input {
   .subscribe-form input {
     padding: 3px 10px 5px;
     border-radius: 5px;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
   }
 
   .subscribe-form .subscribe {
@@ -2555,7 +2567,7 @@ input {
     font-family: Impact;
     font-size: 12.676px;
     border-radius: 5px;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
   }
 
   .win-winsection h1 {
@@ -2627,7 +2639,7 @@ input {
   }
 
   .blog-btn {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 
   #faq .faq-list .question,
@@ -2986,10 +2998,7 @@ h1.bannerheader {
   }
 
   h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+  h2 {
     font-family: Impact !important;
     line-height: normal;
   }
@@ -3155,7 +3164,7 @@ h1.bannerheader {
   .information_tabs .cuntinuebtn {
     font-size: 14px !important;
     padding: 0 !important;
-    padding-top: 30px !important;
+    padding-top: 17px !important;
   }
 
   .footer-foounder {
@@ -3490,7 +3499,7 @@ h1.bannerheader {
 }
 
 .information_tabs .cuntinuebtn {
-  padding: 12px 50px !important;
+  padding: 12px 60px !important;
   border: 0;
   outline: unset;
   color: #FFF;
@@ -3507,7 +3516,10 @@ h1.bannerheader {
 .information_tabs .cuntinuebtn img {
   padding-left: 5px;
 }
+.letter p{
+  margin-bottom: 4px;
 
+}
 .information_tabs .previousbtn {
   padding: 12px 50px;
   border: 0;
@@ -3537,7 +3549,7 @@ h1.bannerheader {
   font-size: clamp(20px, 2.5vw, 40px);
   font-style: normal;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 60px;
   margin-bottom: 30px;
 }
 
@@ -3647,7 +3659,7 @@ h1.bannerheader {
   color: #FFF;
   text-align: center;
   font-family: Impact;
-  font-size: clamp(16px, 2vw, 32px);
+  font-size: clamp(16px, 2vw, 32px) !important;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -3673,7 +3685,12 @@ h1.bannerheader {
 .bloginner strong {
   font-size: clamp(14px, 1.2vw, 22px);
 }
-
+.blogpost .blogitems p {
+  text-align: left;
+}
+.bloginner p{
+  text-align: justify;
+}
 .blogpost h3 {
   color: #FF0083;
   font-family: Lemonada;
@@ -3855,6 +3872,7 @@ h1.bannerheader {
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    padding-left: 6px;
     /* 166.667% */
   }
 
@@ -3881,10 +3899,12 @@ h1.bannerheader {
     color: #000;
   }
 
-  .left-cont {
+  .left-cont h1 {
     text-align: center;
   }
-
+  .boldchar {
+    margin-bottom: 10px;
+  }
   .blogpost {
     text-align: left;
   }
@@ -3892,7 +3912,7 @@ h1.bannerheader {
   .blogitems {
     flex: 0 0 calc(100% - 10px);
     /* Adjust the width and spacing between items */
-    margin-bottom: 20px;
+    margin-bottom: 6px;
     /* Adjust the spacing between rows */
   }
 }
@@ -3974,10 +3994,20 @@ h1.bannerheader {
 }
 
 @media (max-width: 767px) {
+  .mostpopular{
+margin:auto;
+margin-bottom: 30px;
+  }
   .stepbystepitem {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .bloginner p {
+    text-align: center;
+}
+.subhead{
+  text-align: left;
+}
 }
 
 /* our venture */
@@ -4144,7 +4174,20 @@ strong {
 }
 
 @media (max-width: 767px) {
-
+  .cuntinuebtn img,.previousbtn img,.lastpreviousbtn img{
+    width: 30px;
+  }
+  .previousbtn{
+    text-decoration: underline;
+  }
+  .information_tabs .form_details input, .information_tabs .form_details select, .information_tabs .form_details textarea{
+    padding: 5px 20px;
+    margin-bottom: 14px !important;
+    font-size: 14px;
+  }
+  .information_tabs .continueandpreview{
+    padding-top: 15px;
+  }
   .registerform h2,
   .registerform p {
     text-align: center;

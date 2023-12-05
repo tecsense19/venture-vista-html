@@ -46,7 +46,7 @@
 
 
       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
+        <ul id="box1">
           <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="/ourventure.html">Our Venture</a></li>
           <li><a class="nav-link scrollto" href="./blogpage.html">Blog</a></li>
@@ -56,7 +56,7 @@
           <a href="index.html" class="logo me-auto"><img src="assets/img/homeimages/logo.svg" alt=""
               class="img-fluid"></a>
         </div>
-        <ul>
+        <ul id="box2">
 
           <li><a class="nav-link scrollto " href="/joinus.html">Join Us</a></li>
           <li><a class="nav-link scrollto" href="/light-camera.html">Partners</a></li>
@@ -66,14 +66,14 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-
-      <div class="social-links position-absolute">
-        <a href="index.html" class=" useraccount"><img src="assets/img/homeimages/user.png" alt=""
+      
+    </div>
+    <div class="social-links position-absolute">
+      <a href="index.html" class=" useraccount"><img src="assets/img/homeimages/user.png" alt=""
+          class="img-fluid"></a>
+      <div class="align-items-center d-md-block d-lg-none">
+        <a href="index.html" class="logo me-auto"><img src="assets/img/homeimages/mainlogo.png" alt=""
             class="img-fluid"></a>
-        <div class="align-items-center d-md-block d-lg-none">
-          <a href="index.html" class="logo me-auto"><img src="assets/img/homeimages/mainlogo.png" alt=""
-              class="img-fluid"></a>
-        </div>
       </div>
     </div>
   </header><!-- End Header -->
@@ -93,7 +93,7 @@
 
   <!-- choosing venture vista -->
   <section class="choosingventure blogchoosingven padding-50 light-camera d-none d-md-block" data-aos="fade-up">
-    <div class="container" data-aos="zoom-in" data-aos-delay="300"> 
+    <div class="container padding-50" data-aos="zoom-in" data-aos-delay="300"> 
 
       <h1 class="text-black text-center mb-5">Thank you for choosing Venture Vista</h1>
       <div class="numbers d-flex" style="gap: 6vw;">
@@ -133,12 +133,12 @@
           <h1 class="text-white text-center mb-3">Lights, Camera, Action: Business Debut!</h1>
           <ol class="p-4 m-2">
             <li>
-             &nbsp; Ensure all details are accurately filled for a seamless process.</li>
+             Ensure all details are accurately filled for a seamless process.</li>
             <li>
-              &nbsp; After form submission, our expert will meet you to answer any queries and provide account details for the
+              After form submission, our expert will meet you to answer any queries and provide account details for the
               necessary bank transfer. </li>
             <li>
-              &nbsp;Your information is kept confidential and is used for internal purposes only.</li>
+              Your information is kept confidential and is used for internal purposes only.</li>
           </ol>
         </div>
 
@@ -314,15 +314,15 @@
         <div class="col-12 col-md-7 col-lg-6 letter">
           <p>
             <strong> Dear [Recipient's Name],</strong>
-          <p>Thank you for choosing Venture Vista! <br />
+          <p >Thank you for choosing Venture Vista! <br />
             We're thrilled to confirm your upcoming meeting scheduled.</p>
-          <p>
+          <p class="my-md-5 my-4">
             Your participation is highly anticipated, and we're eager to delve into enriching discussions.</p>
 
-          <strong>Meeting Details: </strong>
+          <strong class="">Meeting Details: </strong><br/>
           <strong>Date:</strong> October <strong>9th Time:</strong> 3:00 PM
           <p>Meeting Link Sent To Your Email. </p>
-          <p>
+          <p class="my-md-5 my-4">
             Please don't hesitate to reach out if you have any questions before the meeting. We value your time and look
             forward to a productive session.</p>
           <strong>
@@ -336,7 +336,7 @@
   </section>
 
 
-  <footer class="footer  padding-50 pb-0 " data-aos="fade-up">
+  <!-- <footer class="footer  padding-50 pb-0 " data-aos="fade-up">
     <div class="container pt-4" data-aos="zoom-out" data-aos-delay="200">
       <div class="footer-links text-center">
         <img src="./assets/img/homeimages/footertlogo.svg " alt="" srcset="" class="text-center img-fluid mb-4"
@@ -363,7 +363,7 @@
               <h3 class=" profilename mt-4">Dr. Finkelstein</h3>
             </div>
           </div>
-          <h2 class=" mt-3 mb-4 mx-5 pinkfont vistafounder">Venture Vista Founders</h2>
+          <h2 class=" mt-3 mb-4 ms-md-4 pinkfont vistafounder">Venture Vista Founders</h2>
         </div>
         <div class="col-md-6 ps-md-5">
           <form action="" method="post" class="subscribe-form">
@@ -371,13 +371,11 @@
               placeholder="Type Your Email To Get More Information"><input type="submit" class="subscribe" value="Send">
           </form>
           <div class="footer-links mt-4">
-            <p>
-              <p class="m-0">3180 N 36TH ST, Hollywood FL</p>
-              <p class="m-0"> <a href="mailto:Office@VentureVista.com"> Office@VentureVista.com</a></p>
-              <p><a href="tel:+800954662366">800-954-662-366</a></p>
-            </p>
+            <p class="m-0">3180 N 36TH ST, Hollywood FL</p>
+            <p class="m-0"> <a href="mailto:Office@VentureVista.com"> Office@VentureVista.com</a></p>
+            <p><a href="tel:+800954662366">800-954-662-366</a></p>
           </div>
-
+  
           <div class="social-linkss">
             <a href="#" class="facebook mx-1 ml-0"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" class="instagram mx-1"><i class="bi bi-instagram"></i></a>
@@ -388,14 +386,14 @@
       </div>
     </div>
     </div>
-
+  
     <div class="container-fluid copyright">
       <div class="text-center text-white py-2">
         &copy; Venture Vista. All Rights Reserved
       </div>
     </div>
-  </footer><!-- End  Footer -->
-
+  </footer> -->
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
