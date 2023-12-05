@@ -1829,7 +1829,7 @@ input {
   right: 0;
   color: #fff;
   height: 58px;
-  width: 10vw;
+  width: 12vw;
   font-size: 24px;
     font-family: impact;
     line-height: normal;
@@ -2516,7 +2516,7 @@ input {
   .left-author {
     width: 95.25%;
     margin: auto;
-    padding: 30px 20px;
+    padding: 30px 20px 10px;
     text-align: center;
   }
 
@@ -2525,7 +2525,7 @@ input {
   }
 
   .subscribe-form input {
-    padding: 4px 10px 4px;
+    padding: 3px 10px 5px;
     border-radius: 5px;
   }
 
@@ -2675,9 +2675,9 @@ input {
   }
 
   #testimonials .swiper-pagination .swiper-pagination-bullet {
-    width: 40px;
-    height: 40px;
-    padding: 2px
+    width: 36px;
+    height: 36px;
+    padding: 2px;
   }
 }
 
@@ -2939,7 +2939,15 @@ h1.bannerheader {
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {
-
+  .vistafounder{
+    margin-right: 0;
+  }
+  .useraccount img{
+    width: 17px;
+  }
+  .useraccount{
+    padding: 5px;
+  }
   .conquer-fear-pera .information_tabs .form_details input,
   .information_tabs .form_details select,
   .information_tabs .form_details textarea {
@@ -3030,11 +3038,11 @@ h1.bannerheader {
   }
 
   .stepscarousel {
-    margin: 20px;
+    margin:0 20px;
   }
 
   .subscribe-form .subscribe-email::placeholder {
-    font-size: 10px !important;
+    font-size: 9px !important;
     /* line-height: 20px !important */
   }
 
