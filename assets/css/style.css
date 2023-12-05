@@ -109,7 +109,7 @@ h2 {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -187,7 +187,7 @@ h2 {
   border-radius: 100%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #header .social-links {
     width: 100%;
     right: 0px !important;
@@ -201,7 +201,7 @@ h2 {
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #header .logo {
     font-size: 28px;
   }
@@ -406,7 +406,7 @@ h2 {
   margin-right: 30px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .blogchoosingven .vennumber {
     left: -30px !important;
     /* width: 60px; */
@@ -546,7 +546,7 @@ h2 {
   width: 100%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #hero .container {
     height: auto !important;
   }
@@ -560,13 +560,13 @@ h2 {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   #hero .intro-info {
     padding-top: 100px;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #hero .intro-info {
     text-align: center;
     padding-top: 40px;
@@ -584,7 +584,7 @@ h2 {
   color: #1bb1dc;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .training-content {
     width: fit-content !important;
   }
@@ -1054,7 +1054,7 @@ a strong:hover,
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .section-header p {
     width: 100%;
   }
@@ -1176,7 +1176,7 @@ a strong:hover,
 } */
 .dots-testi {
   position: relative;
-  gap: 30px;
+  gap: 18px;
 }
 
 
@@ -1213,7 +1213,9 @@ a strong:hover,
 
   border: 2px solid #E80;
 }
-
+.swiper-button-next svg:hover,.swiper-button-prev svg:hover{
+  fill: #0072AB;
+}
 #testimonials .swiper-button-next,
 #testimonials .swiper-button-prev {
   position: relative;
@@ -1534,7 +1536,8 @@ a strong:hover,
 
 
 @media (max-width: 1570px) {
-
+  .registercont{
+  padding: 17px  !important;}
   h1,h2,h3,h4,h5{
     line-height: normal;
   }
@@ -2069,11 +2072,11 @@ input {
   height: 15px;
 }
 
-@media (min-width:768px) {
+@media (min-width:767px) {
   #header .container {
     max-width: 100%;
   }
-
+ 
 }
 
 .sponseredtitle {
@@ -2116,7 +2119,7 @@ input {
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:767px) {
 
   .lacture-navs,
   .step-nav {
@@ -2124,7 +2127,7 @@ input {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .sponsereddesc {
     margin-bottom: revert;
   }
@@ -2226,9 +2229,26 @@ input {
   }
 
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .stepscarousel .item {
+    padding: 6px 30px 6px;}
+  .registerhead{
+    text-align: center;
+    padding: 0 20px;
+  }
+  .register-form{
+    margin: auto;
+    
+
+  }
+  .aggrementtext{
+    text-align: left;
+  }
   .conquer-fear-pera{
     margin-bottom: 10px;
+  }
+  #testimonials .swiper-button-next, #testimonials .swiper-button-prev{
+    width: 32px !important;
   }
   .lectureuptext p,
   .lectureuptext h1 {
@@ -2378,7 +2398,7 @@ input {
   .webinar-innov ation.padding-50,
   .conquerfear.padding-50,
   .journey-section.padding-50,
-  .testimonials.padding-50 {
+  .testimonials.padding-50,.register.padding-50 {
     padding-bottom: 0px;
     padding-top: 0px;
   }
@@ -2527,6 +2547,7 @@ input {
   .subscribe-form input {
     padding: 3px 10px 5px;
     border-radius: 5px;
+    height: -webkit-fill-available;
   }
 
   .subscribe-form .subscribe {
@@ -2534,6 +2555,7 @@ input {
     font-family: Impact;
     font-size: 12.676px;
     border-radius: 5px;
+    height: -webkit-fill-available;
   }
 
   .win-winsection h1 {
@@ -2651,9 +2673,9 @@ input {
   }
 
   #testimonials .swiper-pagination .swiper-pagination-bullet {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
   }
 
   .footer .col-md-6 {
@@ -2669,6 +2691,9 @@ input {
   .footer-foounder {
     gap: 12px;
   }
+  .dots-testi {
+    gap: 0px;
+}
 
   #testimonials .section-header {
     width: 100%;
@@ -2938,7 +2963,7 @@ h1.bannerheader {
 }
 
 /* Media query for mobile screens */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .vistafounder{
     margin-right: 0;
   }
@@ -3601,10 +3626,10 @@ h1.bannerheader {
 .aggrementtext {
   color: rgba(255, 255, 255, 0.48);
   font-family: Lemonada;
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 380;
-  line-height: 16px;
+  /* line-height: 16px; */
   /* 160% */
 }
 
@@ -3727,7 +3752,7 @@ h1.bannerheader {
 /* .venturegap{
   height: 50px;
 } */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .blogspost {
     background: linear-gradient(to right, #EA7BB0 65%, #020D5C 35%);
   }
@@ -3879,14 +3904,13 @@ h1.bannerheader {
 
 .vendisimg h1,
 .heartventure {
-  font-size: clamp(30px, 3.4vw, 55px)
+  font-size: clamp(30px, 3.4vw, 60px);
 }
 
-;
 
 /* founders venture page */
 .founderdesc {
-  font-size: clamp(14px, 1.3vw, 22px);
+  font-size: clamp(14px, 1.3vw, 22px) !important;
 }
 
 .firstfonder {
@@ -3949,7 +3973,7 @@ h1.bannerheader {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .stepbystepitem {
     flex: 0 0 100%;
     max-width: 100%;
@@ -4055,6 +4079,7 @@ strong {
 .trainingpoint h4 {
   font-size: clamp(16px, 2vw, 20px);
   font-family: lemonada !important;
+  font-weight: 600;
 }
 
 .trainingpoint small {
@@ -4074,6 +4099,13 @@ strong {
 }
 
 /* register page */
+.registerhead p{
+  font-size: 16px;
+
+}
+.register-form {
+  max-width: 450px;
+}
 .register input {
   width: -webkit-fill-available;
 
@@ -4111,7 +4143,7 @@ strong {
   color: rgb(0, 0, 0) !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .registerform h2,
   .registerform p {
@@ -4162,7 +4194,7 @@ strong {
   border-radius: 20px;
   background: #FBFBFB;
   padding: 30px;
-  margin: 20px 6px 20px 20px;
+  margin: 20px 6px 20px 10px;
 }
 
 .register {
@@ -4191,6 +4223,7 @@ strong {
   text-align: center;
   border: 3px solid;
   border-radius: 55px;
+  margin-bottom: 50px;
 }
 
 .registeritem p {
@@ -4219,8 +4252,8 @@ strong {
 
 @media (max-width: 360px) {
   #testimonials .swiper-pagination .swiper-pagination-bullet {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     padding: 2px;
   }
 }

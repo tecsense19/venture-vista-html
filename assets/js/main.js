@@ -245,11 +245,11 @@ window.addEventListener('load', () => {
       },
       992: {
         slidesPerView: 3,
-        spaceBetween: 40
+        spaceBetween: 20
       },
       1140: {
         slidesPerView: 4,
-        spaceBetween: 40
+        spaceBetween: 20
       },
       1240: {
         slidesPerView: 5,
