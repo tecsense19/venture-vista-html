@@ -162,6 +162,8 @@ h2 {
   align-items: center;
   justify-content: center;
   right: 9.3%;
+  top: 0;
+    height: clamp(67px ,6vw,110px);
 }
 
 #header .social-links a {
@@ -189,7 +191,14 @@ h2 {
   #header .social-links {
     width: 100%;
     right: 0px !important;
+    margin: 0 2px;
+    margin-right: 20px;
   }
+  #header .social-links {
+    top: 12px;
+    height: auto;
+}
+
 }
 
 @media (max-width: 992px) {
@@ -214,6 +223,7 @@ h2 {
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: end;
 }
 
 .navbar li {
@@ -360,16 +370,11 @@ h2 {
 /**
 * Mobile Navigation 
 */
+.bi.bi-list.mobile-nav-toggle::before{
+  content: url("../img/homeimages/togglemenu.png");
+}
+
 .mobile-nav-toggle {
-  color: #413e66;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-  color: #ff0000;
-  font-size: 28px;
-  cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
@@ -379,7 +384,7 @@ h2 {
   z-index: 9998;
   border: 0;
   background: none;
-  font-size: 24px;
+  font-size: 30px;
   transition: all 0.4s;
   outline: none !important;
   line-height: 1;
@@ -439,7 +444,10 @@ h2 {
   left: 0;
   width: 300px;
   padding-top: 18px;
-  background: #33B8AA;
+  /* background: #33B8AA; */
+  background-image: url("../img/homeimages/freewebinar.png");
+  background-position:right ;
+  background-size:cover ;
   transition: 0.4s;
 }
 
@@ -466,13 +474,16 @@ h2 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #413e66;
+  color: #fff;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #1bb1dc;
+  color: #ffffff;
+  border-bottom: 2px solid white;
+  width: 86%;
+  transition: 0.3s ease-in;
 }
 
 .navbar-mobile .getstarted,
@@ -539,7 +550,10 @@ h2 {
   #hero .container {
     height: auto !important;
   }
-
+  .navbar li {
+    position: relative;
+    margin: 0 4px 18px;
+}
   .bannerimage {
     height: 400px;
     object-fit: cover;
@@ -705,7 +719,7 @@ section {
 }
 
 .stepscarousel .item {
-  padding: 20px 11px 10px 25px;
+  padding: 30px ;
   border-radius: 15px;
   height: initial;
 }
@@ -826,8 +840,8 @@ section.steps-section {
 
 .swiper-pagination-bullet-active::before {
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   border: 1px solid #fff;
   display: block;
   border-radius: 100%;
@@ -844,13 +858,15 @@ section.steps-section {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
-
-@media (min-width:1900px) {
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px);
+}
+/* @media (min-width:1900px) {
   .swiper-pagination-bullet-active::before {
-    margin: -3px -3.7px;
+    margin: -3.6px -3.7px;
   }
 
-}
+} */
 
 .rightpost {
   position: sticky;
@@ -943,7 +959,7 @@ a strong:hover,
 }
 
 .conquer-fear-heading {
-  color: #212121;
+  color: #000;
   letter-spacing: 0.9px;
   /* font-size: clamp(1.8rem, 2.9vw, 4rem); */
 }
@@ -1814,6 +1830,9 @@ input {
   color: #fff;
   height: 58px;
   width: 10vw;
+  font-size: 24px;
+    font-family: impact;
+    line-height: normal;
 }
 
 .subscribe-form input {
@@ -2046,8 +2065,8 @@ input {
 }
 
 .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
 }
 
 @media (min-width:768px) {
@@ -2186,9 +2205,11 @@ input {
 
   .navbar-mobile .mobile-nav-toggle {
     position: absolute;
-    top: 15px;
-    right: 37px;
-  }
+    top: 16px;
+    right: 16px;
+    border: 2px solid #fff;
+}
+ 
 
   #header .logo img {
     max-height: 48px;
@@ -2200,11 +2221,11 @@ input {
   }
 
   .mobile-nav-toggle {
-    right: 28px;
-    top: 24px;
+    right: 16px;
+    top: 19px;
   }
-}
 
+}
 @media (max-width: 768px) {
   .conquer-fear-pera{
     margin-bottom: 10px;
@@ -3973,6 +3994,7 @@ h1.bannerheader {
   /* text-stroke: 2px rgba(255, 0, 131, 0.1); */
   color: transparent;
   /* display: inline-block; */
+  line-height: normal;
 }
 
 .darkline {

@@ -4,6 +4,23 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+window.addEventListener('load', () => {
+  if (window.innerWidth >= 992) {
+    // Get the width of both boxes
+    const menu1 = document.getElementById('box1');
+  const menu2 = document.getElementById('box2');
+
+  const width1 = menu1.offsetWidth;
+  const width2 = menu2.offsetWidth;
+
+  // Set the width of both boxes to the maximum width
+  if (width1 > width2) {
+    box2.style.width = `${width1}px`;
+  } else {
+    box1.style.width = `${width2}px`;
+  }
+  }
+});
 (function () {
   "use strict";
 
