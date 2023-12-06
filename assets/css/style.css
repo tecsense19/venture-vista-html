@@ -1,3 +1,19 @@
+/* -----------------------------------------------------------
+#font face
+-------------------------------------------------------------- */
+@font-face {
+  font-family: 'impact';
+  src: url('../fonts/impact.woff') format('woff'),
+      url('../fonts/unicode.impact.woff') format('woff'),
+      url('../fonts/Impacted.woff') format('woff');
+  /* Add additional formats if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body {
+  font-family: 'impact', sans-serif;
+} */
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
