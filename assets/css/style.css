@@ -872,7 +872,7 @@ section.steps-section {
 }
 
 .items-num,
-.itemnumbers {
+.itemnumbers ,.trainingpoint{
   transition: 0.5s ease-in-out;
 }
 
@@ -881,7 +881,10 @@ section.steps-section {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
-
+.trainingpoint:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px);
@@ -1087,12 +1090,19 @@ a strong:hover,
   width: 50%;
 
 }
-
+ [type=reset]:not(:disabled), [type=submit]:not(:disabled){
+  border: none;
+}
 @media (max-width: 767px) {
   .section-header p {
     width: 100%;
   }
-
+  .container.padding-50{
+    padding-top: 10px;
+  }
+  .vencommunity.padding-50{
+    margin-bottom: 10px;
+  }
   .sponsered .block {
     margin-top: 10px;
   }
@@ -1104,11 +1114,11 @@ a strong:hover,
 
 .main-lacture .swiper-slide {
   transition: 0.4s ease-in;
-  transform: rotateX(2px) rotateY(-15deg);
+  transform: rotateX(2px) rotateY(-20deg);
 }
 
 .main-lacture .swiper-slide:hover {
-  transform: rotateX(5deg) rotateY(15deg);
+  transform: rotateX(5deg) rotateY(20deg);
   transition: 0.4s ease-in;
 }
 
@@ -1891,11 +1901,13 @@ input {
   position: absolute;
   right: 0;
   color: #fff;
-  height: 58px;
+  /* height: 58px; */
   width: 12vw;
   font-size: 24px;
   font-family: impact;
   line-height: normal;
+  bottom: 0px;
+  top: 0px;
 }
 
 .subscribe-form input {
@@ -3141,7 +3153,6 @@ h1.bannerheader {
 
   .subscribe {
     width: 89px;
-    height: 31.964px;
   }
 
   .stepscarousel {
@@ -4215,7 +4226,7 @@ background: ; */
 
 .big-font {
   font-family: Impact;
-  font-size: clamp(48px, 14.2vw, 212.57px);
+  font-size: clamp(48px, 13.5vw, 212.57px);
   -webkit-text-stroke: 2px rgba(255, 0, 131, 0.1);
   /* text-stroke: 2px rgba(255, 0, 131, 0.1); */
   color: transparent;
@@ -4338,9 +4349,16 @@ strong {
 .register select option {
   color: rgb(0, 0, 0) !important;
 }
+.readytoleaptext{
 
+}
 @media (max-width: 767px) {
-
+  .readytoleaptext{
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    letter-spacing: 0.9px;
+  }
   .cuntinuebtn img,
   .previousbtn img,
   .lastpreviousbtn img {
@@ -4612,8 +4630,64 @@ label {
 /* .scrolldiv::before{
   content: url('../img/homeimages/uparrow.png');
 } */
+.boy-image {
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  transform: translateY(0px)
+}
+#boy-image, #right-author-image,.rightjourney {
+  transition: transform 0.8s ease-in-out;
+}
+.boy-image:hover {
+  transform: translateY(20px);
+}
+/* .right-author-image {
+  animation: slideIn 1s forwards;
+  left: -100%;
+} */
+/* @keyframes slideIn {
+  to {
+    left: 0; 
+  }
+} */
 
+.faq-list li:hover img {
+  animation: bounceInLeft 1s ease-out;
+}
 
+/* Animation for the second image */
+/* .faq-list li:nth-child(2) img {
+  animation: bounceInLeft 1s ease-out;
+} */
+
+/* Add similar animations for other images */
+
+/* Keyframes for fadeInDown animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for bounceInLeft animation */
+@keyframes bounceInLeft {
+  0%{
+    transition: transform 0.8s ease-in-out;
+    rotate: 0deg;
+  }
+  100% { 
+    rotate: -360deg;
+  }
+}
+/* .social-linkss a:hover i{
+  transform: scale(5) 0.8s ease-in-out;
+
+} */
 .scrolldiv::-webkit-scrollbar-thumb {
   background: url('../img/homeimages/scrollbar.png');
   background-repeat: no-repeat;

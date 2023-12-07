@@ -4,21 +4,47 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+var lastScrollTop = 0;
+
+window.addEventListener('scroll', function () {
+  if (window.innerWidth >= 992) {
+    var boyImage = document.getElementById('boy-image');
+    var right = document.getElementById('right-author-image');
+   var rightjourney= document.getElementById('rightjourney');
+    var scrollY = window.scrollY || document.documentElement.scrollTop;
+    var deltaY = scrollY - lastScrollTop;
+
+    if (deltaY > 0) {
+      // Scrolling down, move diagonally downward
+      boyImage.style.transform = 'translate(calc(5vw - 10%), calc(5vh - 10%))';
+      right.style.transform = 'translate(calc(8vw + 0%), calc(0vh + 0%))';
+      rightjourney.style.transform = 'translate(calc(0vw - 5%), calc(10vh - 10%))';
+    } else {
+      // Scrolling up, move diagonally upward
+      boyImage.style.transform = 'translate(calc(-5vw + 10%), calc(-5vh + 10%))';
+      right.style.transform = 'translate(calc(5vw - 10%), calc(0vh - 0%))';
+      rightjourney.style.transform = 'translate(calc(10vw - 10%), calc(0vh - 5%))';
+    }
+
+    lastScrollTop = scrollY;
+  }
+});
 window.addEventListener('load', () => {
   if (window.innerWidth >= 992) {
     // Get the width of both boxes
     const menu1 = document.getElementById('box1');
-  const menu2 = document.getElementById('box2');
+    const menu2 = document.getElementById('box2');
 
-  const width1 = menu1.offsetWidth;
-  const width2 = menu2.offsetWidth;
+    const width1 = menu1.offsetWidth;
+    const width2 = menu2.offsetWidth;
 
-  // Set the width of both boxes to the maximum width
-  if (width1 > width2) {
-    box2.style.width = `${width1}px`;
-  } else {
-    box1.style.width = `${width2}px`;
-  }
+    // Set the width of both boxes to the maximum width
+    if (width1 > width2) {
+      box2.style.width = `${width1}px`;
+    } else {
+      box1.style.width = `${width2}px`;
+    }
   }
 });
 (function () {
@@ -509,50 +535,48 @@ window.addEventListener('load', () => {
 
 const select = document.querySelector('.mobile-select');
 const selectDynamicText = () => {
-    //mobile select
-    Array.from(select.nextElementSibling.children).forEach(li => {
-        Array.from(li.children).forEach(child => {
-            if (child.classList.contains('active')) {
-                let activeText = child.textContent;
-                select.textContent = activeText;
-            }
-        });
+  //mobile select
+  Array.from(select.nextElementSibling.children).forEach(li => {
+    Array.from(li.children).forEach(child => {
+      if (child.classList.contains('active')) {
+        let activeText = child.textContent;
+        select.textContent = activeText;
+      }
     });
+  });
 }
 select.addEventListener('click', function () {
-    this.classList.toggle('active');
-    this.nextElementSibling.classList.toggle('show');
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('show');
 });
 
 const handleCloseSelect = () => {
-    select.classList.remove('active');
-    select.nextElementSibling.classList.remove('show');
+  select.classList.remove('active');
+  select.nextElementSibling.classList.remove('show');
 }
 
 //custom tabs
 const tabContainer = document.querySelector('.tab-container');
 
 tabContainer.addEventListener('click', e => {
-    e.stopPropagation();
-    const tabNavs = document.querySelectorAll('.tab-nav button');
-    const tabItems = document.querySelectorAll('.tab-item');
-    if (e.target.classList.contains('tab-btn')) {
-        tabNavs.forEach(tabNav => tabNav.classList.remove('active'));
-        tabItems.forEach(tabItem => {
-            tabItem.classList.add('hide');
-            let tabId = tabItem.getAttribute('data-id');
+  e.stopPropagation();
+  const tabNavs = document.querySelectorAll('.tab-nav button');
+  const tabItems = document.querySelectorAll('.tab-item');
+  if (e.target.classList.contains('tab-btn')) {
+    tabNavs.forEach(tabNav => tabNav.classList.remove('active'));
+    tabItems.forEach(tabItem => {
+      tabItem.classList.add('hide');
+      let tabId = tabItem.getAttribute('data-id');
 
-            if (e.target.getAttribute('id') === tabId) {
-                e.target.classList.add('active');
-                tabItem.classList.remove('hide');
-            }
-        });
-        selectDynamicText();
-        handleCloseSelect();
-    }
+      if (e.target.getAttribute('id') === tabId) {
+        e.target.classList.add('active');
+        tabItem.classList.remove('hide');
+      }
+    });
+    selectDynamicText();
+    handleCloseSelect();
+  }
 });
 
 
 selectDynamicText();
-
-
