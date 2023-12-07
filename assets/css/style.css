@@ -465,7 +465,7 @@ h2 {
   width: 300px;
   padding-top: 18px;
   /* background: #33B8AA; */
-  background-image: url("../img/homeimages/freewebinar.png");
+  background-image: url("../img/homeimages/menuimg.jpg");
   background-position: right;
   background-size: cover;
   transition: 0.4s;
@@ -502,7 +502,7 @@ h2 {
 .navbar-mobile li:hover>a {
   color: #ffffff;
   border-bottom: 2px solid white;
-  width: 86%;
+  width: fit-content;
   transition: 0.3s ease-in;
 }
 
@@ -1094,6 +1094,9 @@ a strong:hover,
   border: none;
 }
 @media (max-width: 767px) {
+  /* .founders.padding-50{
+    padding-bottom: 0px;
+  } */
   .section-header p {
     width: 100%;
   }
@@ -2161,7 +2164,7 @@ input {
 }
 
 .stroketext {
-  margin-bottom: -7%;
+  margin-bottom: -9%;
 }
 
 @media (max-width:1177px) {
@@ -4349,9 +4352,9 @@ strong {
 .register select option {
   color: rgb(0, 0, 0) !important;
 }
-.readytoleaptext{
+/* .readytoleaptext{
 
-}
+} */
 @media (max-width: 767px) {
   .readytoleaptext{
     font-size: 30px;
