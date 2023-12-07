@@ -352,6 +352,11 @@ h2 {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
+  .padding-50 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
 
   .trainingpoint {
     padding: 20px 15px !important;
@@ -752,15 +757,15 @@ section {
   font-family: Impact;
   font-style: normal;
   font-weight: 400;
-  line-height: 70px;
+  line-height: inherit;
   letter-spacing: 0.9px;
-  font-size: clamp(25.7px, 2.2vw, 40px);
+  font-size: clamp(25.7px, 2.0vw, 40px);
 }
 
 .stepscarousel h3 {
   color: #FFF;
   font-family: Impact;
-  font-size: clamp(21px, 1.6vw, 30px);
+  font-size: clamp(21px, 1.5vw, 30px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -771,7 +776,7 @@ section {
 .stepscarousel h4 {
   color: #FFF;
   font-family: Impact;
-  font-size: clamp(21px, 1.6vw, 25px);
+  font-size: clamp(21px, 1.5vw, 25px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -782,7 +787,7 @@ section {
 .stepscarousel p {
   color: #FFF;
   font-family: Lemonada;
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: clamp(14px, 0.9vw, 16px);
   font-style: normal;
   font-weight: 380;
   line-height: inherit;
@@ -833,6 +838,11 @@ section.steps-section {
 
 .steps-section .swiper-pagination {
   margin-top: 26px;
+  padding-right: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .swiper-button-prev:after,
@@ -1589,20 +1599,14 @@ a strong:hover,
   .post-authoursec img {
     width: 22px;
   }
-
+  .stepscarousel .item {
+    padding: 20px;}
   .postcontent {
     padding: 20px !important;
   }
-
-  .padding-50 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .registercont {
     padding: 17px !important;
   }
-
   h1,
   h2,
   h3,
@@ -1610,7 +1614,6 @@ a strong:hover,
   h5 {
     line-height: normal;
   }
-
   .dots-testi {
     justify-content: center !important;
   }
@@ -1625,22 +1628,15 @@ a strong:hover,
   .footer-links ul li a {
     font-size: 16px !important;
   }
-
-  /* .winsection {
-    width: 100%;
-  } */
-
   .webinar-btn {
     font-size: 16px;
   }
-
   .author-section .container-fluid {
     padding: 30px 0;
   }
-
   .left-author p,
   .left-author .sky-green.darkfear {
-    font-size: 18px !important;
+    font-size: 16px !important;
 
   }
 }
@@ -1661,6 +1657,8 @@ a strong:hover,
   .blogspost {
     padding: 60px 0 !important;
   }
+  .stepscarousel .item {
+    padding: 30px;}
 
   /* .container,.steps-section.container-fluid {
     max-width: 85.25%;
@@ -2318,7 +2316,7 @@ input {
   }
 
   .stepscarousel .item {
-    padding: 6px 30px 6px;
+    padding: 30px 30px 6px;
   }
 
   .registerhead {
@@ -2569,6 +2567,7 @@ input {
 
   .steps-section .swiper-pagination {
     margin-top: 23px;
+    padding-right: unset;
   }
 
   .swiper-button-prev,
@@ -3808,7 +3807,6 @@ h1.bannerheader {
 }
 
 .blogpost .blogitems span {
-  display: block;
   margin: 5px 0;
   font-size: 18px;
 }
@@ -4155,6 +4153,8 @@ background: ; */
 }
 
 @media (max-width: 767px) {
+  .blogpost .blogitems span {
+    display: block;}
   .stepbigfont {
     margin-bottom: 0px !important;
   }
@@ -4655,9 +4655,11 @@ label {
 } */
 
 .faq-list li:hover img {
-  animation: bounceInLeft 1s ease-out;
+  animation: rotateright 1s ease-out;
 }
-
+/* .faq-list li img{
+  animation: rotateleft 1s ease-out;
+} */
 /* Animation for the second image */
 /* .faq-list li:nth-child(2) img {
   animation: bounceInLeft 1s ease-out;
@@ -4678,7 +4680,16 @@ label {
 }
 
 /* Keyframes for bounceInLeft animation */
-@keyframes bounceInLeft {
+@keyframes rotateright {
+  0%{
+    transition: transform 0.8s ease-in-out;
+    rotate: -360deg;
+  }
+  100% { 
+    rotate: 0deg;
+  }
+}
+@keyframes rotateleft {
   0%{
     transition: transform 0.8s ease-in-out;
     rotate: 0deg;
