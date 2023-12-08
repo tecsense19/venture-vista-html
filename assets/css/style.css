@@ -24,11 +24,37 @@
 .padding-50 {
   padding: 50px 0;
 }
-
 .padding-100 {
   padding-top: 100px;
 }
-
+.paddingub-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.paddingup-100 {
+  padding-top: 100px;
+}
+.paddingbt-100 {
+  padding-bottom: 100px;
+}
+.paddingup-70 {
+  padding-top: 80px;
+}
+.paddingbt-70 {
+  padding-bottom: 80px;
+}
+.margin-100 {
+  margin-top: 100px;
+}
+.margin-80{
+  margin-top: 80px;
+}
+.margin-60{
+  margin-top: 60px;
+}
+.margin-50{
+  margin-top: 50px;
+}
 body {
   background: #fff;
   color: #444;
@@ -1048,7 +1074,7 @@ a strong:hover,
 }
 
 .rightjourney img {
-  max-height: 857px;
+  max-height: 800px;
 }
 
 @media screen and (max-width:1140px) {
@@ -1064,7 +1090,7 @@ a strong:hover,
 
 /* authour */
 .left-author {
-  width: 37.76vw;
+  width: 39.9vw;
 }
 
 .author-section .container-fluid {
@@ -1593,9 +1619,44 @@ a strong:hover,
   background: rgba(255, 255, 255, 0.50);
   opacity: 1;
 }
-
+.conquer-fear-pera,.free-webinar-pera{
+  margin-bottom: 50px;
+}
 
 @media (max-width: 1570px) {
+  .free-webinar.margin-100,.author-section.margin-100,.steps-section.margin-100,.conquerfear.margin-100,.journey-section.margin-100,.webinar-innovation.margin-100,.author-section.margin-100,.margin-100.win-winsection,.lecturer-section.margin-100 {
+    margin-top: clamp(30px,4vw,70px);
+}
+.community.paddingub-70 {
+  padding-top: clamp(30px,4vw,70px);
+  padding-bottom: clamp(50px,4vw,70px);
+}
+.lecturer-section.paddingbt-100 {
+  padding-bottom: clamp(60px,6vw,70px);
+}
+.footer .paddingup-100{
+  padding-top: clamp(50px,4vw,70px);
+}
+.footer .paddingbt-70{
+  padding-bottom: clamp(30px,4vw,50px);
+}
+.testimonials.margin-80{
+  margin-top: clamp(30px,2vw,50px);
+}
+.faq-section.margin-50{
+  margin-top: clamp(1px,1vw,30px);
+}
+.conquer-fear-pera,.free-webinar-pera{
+  margin-bottom: 30px;
+}
+.faq-font{
+line-height: normal;
+}
+.stepscarousel {
+  padding: 5vh 0 6vh;}
+/* .padding-50 {
+    padding: 40px 0;
+} */
   .post-authoursec img {
     width: 22px;
   }
@@ -1631,12 +1692,12 @@ a strong:hover,
   .webinar-btn {
     font-size: 16px;
   }
-  .author-section .container-fluid {
+  /* .author-section .container-fluid {
     padding: 30px 0;
-  }
+  } */
   .left-author p,
   .left-author .sky-green.darkfear {
-    font-size: 16px !important;
+    font-size: 14px !important;
 
   }
 }
@@ -1653,6 +1714,61 @@ a strong:hover,
   box-sizing: border-box;
 }
 
+@media (max-width: 1500px) {
+.conquer-fear img{
+  max-width: 300px;
+}
+.faq-list li img {
+  animation: rotateright 1s ease-out;
+  width: 65px;
+}
+}
+@media (max-width: 1240px) {
+.faq-list li img {
+  animation: rotateright 1s ease-out;
+  width: 58px;
+}
+.left-author p,.left-author div.mb-4{
+  margin-bottom: 10px !important;
+}
+.left-author div.mb-4 img:first-child{
+  width: 54px ;
+}
+.left-author div.mb-4 img:nth-child(2){
+  height: 54px ;
+}
+}
+@media (max-width: 991px) {
+  .testimonials.margin-80 {
+    margin-top: 20px;
+}
+  .authourbackground {
+    display: flex;
+    flex-direction: column-reverse;
+}
+  .journey-section.margin-100,.conquerfear.margin-100   {
+    margin-top: 40px;
+  }
+  .leftjourney .darkcol:last-child{
+    margin-bottom:010px;
+  }
+  .boy-image img {
+    width: 172.755px;
+    height: 238.938px;
+    margin-bottom: 20px;
+}
+.left-author {
+  width: 95.25%;
+  margin: auto;
+  padding: 30px 20px 10px;
+  text-align: center;
+}
+}
+@media (max-width: 767px) {
+  .journey-section.margin-100,.conquerfear.margin-100,.testimonials.margin-80   {
+    margin-top: 0px;
+  }
+}
 @media (max-width:1140px) {
   .blogspost {
     padding: 60px 0 !important;
@@ -1687,7 +1803,7 @@ a strong:hover,
 
   .left-author p,
   .left-author .sky-green.darkfear {
-    font-size: 16px !important;
+    font-size: 12px !important;
 
   }
 
@@ -2242,9 +2358,9 @@ input {
     gap: 10px !important;
   }
 
-  .left-author {
+  /* .left-author {
     width: 44.76vw;
-  }
+  } */
 
   .left-author .mb-4 {
     display: flex;
@@ -3092,6 +3208,9 @@ h1.bannerheader {
 
   .receipientimage img {
     width: 121px;
+  }
+  .receipient{
+    background-size:cover ;
   }
 
   .calenderprevone {
@@ -4717,14 +4836,15 @@ label {
   content: url('../img/homeimages/logo.svg');
 } */
 .requirementscont ul{
-  gap: 25px;
+  gap: 40px;
 }
 .requirementscont{
   border-radius: 15px;
 background: #0072AB;
-padding:3vw 2vw;
-margin-right: -8vw;
     z-index: 1;
+    padding: 3vw 2vw;
+    margin-right: -7vw;
+    width: 55vw;
 }
 .requirementscont h4{
   color: #FFF;
@@ -4749,9 +4869,9 @@ margin-right: -8vw;
   line-height: 30px; /* 125% */
 }
 @media (max-width: 1500px) {
-  .requirementscont{
+  /* .requirementscont{
     padding: 20px;
-  }
+  } */
   .requirementscont ul {
     gap: 10px;
 }
@@ -4772,6 +4892,16 @@ margin-right: -8vw;
   .tab-nav ul {
     gap: 12px;
   }
+  .btn-servicesprov {
+    font-size: 14px;
+  }
+  .requirementscont{
+    width: 90vw;
+  }
+  .requirementscont  ul{
+    max-width: 350px;
+    margin: auto;
+  }
   .requirements .row{
     flex-direction: column-reverse;
   }
@@ -4790,7 +4920,7 @@ margin-right: -8vw;
     width: 100px;
   }
   .requirements.padding-50{
-    padding: 20px 0;
+    padding: 8px 0;
   }
   .requirementscont ul{
     align-items: unset !important;

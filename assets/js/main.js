@@ -5,26 +5,51 @@
 * License: https://bootstrapmade.com/license/
 */
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   const typedTextElement = document.getElementById("typedText");
+//   const originalText = typedTextElement.textContent || typedTextElement.innerText; 
+//   const typingSpeed = 100;
+
+//   function typeText() {
+//     for (let i = 0; i <= originalText.length; i++) {
+//       setTimeout(() => {
+//         typedTextElement.textContent = originalText.slice(0, i);
+//       }, i * typingSpeed);
+//     }
+
+//     // After typing, remove the blur effect (you can adjust the delay as needed)
+//     setTimeout(() => {
+//       typedTextElement.style.filter = "none";
+//     }, originalText.length * typingSpeed + 1000); // 1000 milliseconds = 1 second
+//   }
+
+//   // Initial setup: Apply blur effect and start typing
+//   // typedTextElement.style.filter = "blur(5px)";
+//   typeText();
+// });
+
+
+// <p id="typedText">Hey there… have we met before?</p>
 var lastScrollTop = 0;
 
 window.addEventListener('scroll', function () {
   if (window.innerWidth >= 992) {
     var boyImage = document.getElementById('boy-image');
-    var right = document.getElementById('right-author-image');
-   var rightjourney= document.getElementById('rightjourney');
+    // var right = document.getElementById('right-author-image');
+  //  var rightjourney= document.getElementById('rightjourney');
     var scrollY = window.scrollY || document.documentElement.scrollTop;
     var deltaY = scrollY - lastScrollTop;
 
     if (deltaY > 0) {
       // Scrolling down, move diagonally downward
       boyImage.style.transform = 'translate(calc(5vw - 10%), calc(5vh - 10%))';
-      right.style.transform = 'translate(calc(8vw + 0%), calc(0vh + 0%))';
-      rightjourney.style.transform = 'translate(calc(0vw - 5%), calc(10vh - 10%))';
+      // right.style.transform = 'translate(calc(8vw + 0%), calc(0vh + 0%))';
+      // rightjourney.style.transform = 'translate(calc(0vw - 5%), calc(10vh - 10%))';
     } else {
       // Scrolling up, move diagonally upward
       boyImage.style.transform = 'translate(calc(-5vw + 10%), calc(-5vh + 10%))';
-      right.style.transform = 'translate(calc(5vw - 10%), calc(0vh - 0%))';
-      rightjourney.style.transform = 'translate(calc(10vw - 10%), calc(0vh - 5%))';
+      // right.style.transform = 'translate(calc(5vw - 10%), calc(0vh - 0%))';
+      // rightjourney.style.transform = 'translate(calc(10vw - 10%), calc(0vh - 5%))';
     }
 
     lastScrollTop = scrollY;
@@ -216,7 +241,7 @@ window.addEventListener('load', () => {
       },
       640: {
         slidesPerView: 2,
-        spaceBetween: 80
+        spaceBetween: 40
       },
       992: {
         slidesPerView: 3,
@@ -314,11 +339,11 @@ window.addEventListener('load', () => {
         slidesPerView: 4,
         spaceBetween: 40
       },
-      1140: {
+      1240: {
         slidesPerView: 5,
         spaceBetween: 40
       },
-      1400: {
+      1500: {
         slidesPerView: 6,
         spaceBetween: 40
       }
