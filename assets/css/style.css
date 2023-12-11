@@ -1629,12 +1629,25 @@ a strong:hover,
 }
 
 @media (max-width: 1570px) {
-  .free-webinar.margin-100,.author-section.margin-100,.steps-section.margin-100,.conquerfear.margin-100,.journey-section.margin-100,.webinar-innovation.margin-100,.author-section.margin-100,.margin-100.win-winsection,.lecturer-section.margin-100 {
+  .training-prog.margin-50{
+    margin-top: 10px;
+  }
+  .readytoleap.margin-50{
+    margin-top: clamp(30px,2vw,50px);
+  }
+  .vencommunity.margin-100 {
+    margin-top: clamp(50px,4vw,70px);
+  }
+  .free-webinar.margin-100,.founders.margin-100,.author-section.margin-100,.steps-section.margin-100,.conquerfear.margin-100,.journey-section.margin-100,.webinar-innovation.margin-100,.author-section.margin-100,.margin-100.win-winsection,.lecturer-section.margin-100 {
     margin-top: clamp(30px,4vw,70px);
 }
 .community.paddingub-70 {
   padding-top: clamp(30px,4vw,70px);
   padding-bottom: clamp(50px,4vw,70px);
+}
+.paddingub-70.ourvenfree {
+  padding-top: clamp(10px,4vw,70px);
+  padding-bottom: clamp(40px,4vw,70px);
 }
 .lecturer-section.paddingbt-100 {
   padding-bottom: clamp(60px,6vw,70px);
@@ -1794,6 +1807,9 @@ line-height: normal;
 }
 }
 @media (max-width: 767px) {
+  .blog-btn{
+    font-size: 14px  !important;
+  }
   .register .container-fluid {
     background:transparent !important;
     /* padding: 50px 40px 10px; */
