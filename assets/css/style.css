@@ -1083,7 +1083,7 @@ a strong:hover,
 
 @media screen and (max-width:1140px) {
   .leftjourney {
-    padding: 5vh 0 3vh;
+    padding: 5vh 12px 3vh;
   }
 
   .winsection {
@@ -1134,9 +1134,10 @@ a strong:hover,
   border: none;
 }
 @media (max-width: 767px) {
-  /* .founders.padding-50{
+
+  .founders.padding-50{
     padding-bottom: 0px;
-  } */
+  }
   .section-header p {
     width: 100%;
   }
@@ -1761,6 +1762,12 @@ line-height: normal;
 }
 }
 @media (max-width: 991px) {
+  .subscribe-form input {
+    padding: 12px 20px !important;
+}
+  .conquer-fear img {
+    max-width: 210px;
+}
   .testimonials.margin-80 {
     margin-top: 20px;
 }
@@ -2304,7 +2311,7 @@ input {
 }
 
 .stroketext {
-  margin-bottom: -9%;
+  margin-bottom: -7%;
 }
 
 @media (max-width:1177px) {
@@ -4049,7 +4056,7 @@ h1.bannerheader {
 
   .readytoleap.padding-50 {
     padding: 0;
-    margin: 25px 0;
+    margin: 25px 0 0 0;
   }
 
   .discovervista.padding-50,
@@ -4405,7 +4412,7 @@ strong {
 }
 
 .rightventrure {
-  margin-top: 20vh;
+  margin-top: clamp(5vh,8vw,20vh);
 }
 
 .training-prog h1 {
